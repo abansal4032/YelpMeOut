@@ -1,0 +1,117 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.loader {
+    
+     border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #83c1bf;
+     /*border-bottom: 16px solid red;
+     border-left: 16px solid yellow;*/
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+span#loading{
+  position: absolute;
+  top:30%;
+  display: inline-block;
+}
+div#layout {
+  text-align: center;
+}
+
+div#container {
+  position: relative;
+  width: 1300px;
+  height: 600px;
+  margin: auto;
+  background-color: #fff;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bar {
+  fill: #83c1bf;
+}
+
+text {
+  font-size: 12px;
+  fill: black;
+}
+
+path {
+  stroke: gray;
+}
+
+line {
+  stroke: gray;
+}
+
+line#limit {
+  stroke: #FED966;
+  stroke-width: 3;
+  stroke-dasharray: 3 6;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.grid .tick line {
+  stroke: #9FAAAE;
+  stroke-opacity: 0.3;
+}
+
+text.divergence {
+  font-size: 14px;
+  fill: #2F4A6D;
+}
+
+text.value {
+  font-size: 14px;
+}
+
+text.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+text.label {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+text.source {
+  font-size: 10px;
+}
+
+.custom-time-dropdown{
+    position: absolute;
+    font-size: 10px;
+    background: #83c1bf;
+    color: black;
+    border: none;
+}
+
+div.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+div.dropdown{
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}

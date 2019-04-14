@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <html lang="en">
+		<head>
+		  <meta charset="UTF-8"/>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		  <title>Test Metric</title>
+		  <link rel="stylesheet" type="text/css" href="/static/analyze.css">
+		  <!-- <link  href="/static/age-groups.csv"> -->
+		  <script src="https://d3js.org/d3.v4.min.js"></script>
+		</head>
+		</style>
+		<body>
+			<!-- <div id="main">
+				<div class="d3-tooltip"></div>
+				<svg style="margin-left: 100px" width="960" height="500"></svg>
+			</div> -->
+			<div id='layout1'>
+		      <div id='container1'>
+		        <div class="d3-tooltip"></div>
+				<svg style="margin-left: 100px" width="960" height="500"></svg>
+		      </div>
+		  </div>
+		</body>
+		<script src="/static/getRatings.js" type="module"></script>
+		<script src="/static/analyze.js" type="module"></script>
+	</html>
+
+{% endblock %}

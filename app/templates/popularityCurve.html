@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <html lang="en">
+		<head>
+		  <meta charset="UTF-8"/>
+		  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+		  <title>Under Const</title>
+		  <link rel="stylesheet" type="text/css" href="/static/popularityCurve.css">
+		  <style>
+	          canvas {
+		          -moz-user-select: none;
+		          -webkit-user-select: none;
+		          -ms-user-select: none;
+	  	      }
+      	</style>
+		</head>
+		<body>
+			<div class="row">
+				<div class="col-md-12" id="title"><center><h3>Popularity of business over time</h3></center></div>
+				<div class="col-md-5"></div>
+				<select class="col-md-2" id="dropdownList" onchange="updateCharts_popularity()" align="center"></select>
+			</div>
+			<br>
+			<center>
+				<div id='layout123' style="width: 75%;">
+				    <canvas id='popularity-canvas', style="width: 75%; height: 50%">
+				      <svg />
+				      <div id='tooltip' style='position:absolute;background-color:lightgray;padding:5px'></div>
+				    </canvas>
+				</div>
+			</center>
+			<div id="info"></div>
+		</body>
+		<script src="../static/Chart.bundle.js"></script>
+		<script src="https://rawgit.com/chartjs/chartjs-plugin-annotation/master/chartjs-plugin-annotation.js"></script>
+		<script src="/static/Chart.bundle.js"></script>
+		<script src="/static/popularityCurve.js"></script>
+		
+
+
+	</html>
+
+{% endblock %}
